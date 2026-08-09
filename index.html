@@ -3,12 +3,18 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<title>Mark Neil Arayata | Portfolio</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+    <title>Delicious Bites Restaurant</title>
+
+    <link rel="stylesheet" href="style.css?v=4">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
 
@@ -16,332 +22,610 @@
 <body>
 
 
-<nav>
+<!-- ================= HEADER ================= -->
 
-<h2>Mark Neil Arayata</h2>
+<header>
 
-<div>
+    <h1>🍴 Delicious Bites</h1>
 
-<a href="#about">About</a>
+    <nav>
 
-<a href="#projects">Projects</a>
+        <a href="#home">Home</a>
 
-<a href="#contact">Contact</a>
+        <a href="#about">About</a>
 
-</div>
+        <a href="#menu">Menu</a>
 
-</nav>
+        <a href="#reservation">Reservation</a>
 
+        <a href="#contact">Contact</a>
 
-
-
-
-<header class="hero">
-
-
-<img 
-src="profile.png" 
-class="profile"
-alt="Mark Neil Arayata Profile">
-
-
-<h1>
-Hi, I'm Mark Neil Arayata 👋
-</h1>
-
-
-<h3>
-Web Developer | PHP & MySQL Developer
-</h3>
-
-
-<p>
-I create websites, systems, and applications using modern web technologies.
-</p>
-
-
-<a href="#projects" class="btn">
-View My Projects
-</a>
-
+    </nav>
 
 </header>
 
 
 
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <h2>
+        Fresh Food, Great Taste
+    </h2>
+
+    <p>
+        Experience handcrafted meals made with premium ingredients,
+        served fresh every day in a warm and welcoming atmosphere.
+    </p>
 
 
+    <div class="hero-buttons">
+
+        <button onclick="location.href='#menu'">
+            🍽 Order Now
+        </button>
 
 
-<section id="about">
+        <button
+            class="secondary-btn"
+            onclick="location.href='#reservation'">
 
+            📅 Reserve Table
 
-<h2>About Me</h2>
+        </button>
 
-
-<p>
-
-I am a college student passionate about web development,
-system development, and creating useful applications.
-
-I specialize in PHP, MySQL, HTML, CSS, JavaScript, and Bootstrap.
-
-</p>
-
+    </div>
 
 </section>
 
 
 
+<!-- ================= ABOUT ================= -->
 
+<section id="about" class="about">
 
+    <h2>
+        About Us
+    </h2>
 
 
+    <p>
 
+        At <strong>Delicious Bites</strong>, we believe every meal should
+        be memorable. From juicy burgers to authentic Italian pasta and
+        freshly baked pizza, we prepare every dish using quality ingredients
+        and exceptional customer service.
 
-<section id="projects">
+    </p>
 
 
-<h2>My Projects</h2>
+    <div class="about-info">
 
 
+        <!-- OPERATING HOURS -->
 
-<div class="projects">
+        <div class="info-card">
 
+            <h3>
+                🕒 Operating Hours
+            </h3>
 
 
+            <p>
 
+                Monday - Friday<br>
 
+                <strong>
+                    10:00 AM - 9:00 PM
+                </strong>
 
+            </p>
 
-<!-- FLOWER SHOP SYSTEM -->
 
-<div class="card">
+            <br>
 
 
-<img 
-src="flower-shop.png" 
-class="project-img"
-alt="Flower Shop System">
+            <p>
 
+                Saturday - Sunday<br>
 
+                <strong>
+                    9:00 AM - 10:00 PM
+                </strong>
 
-<h3>
-🌸 Flower Shop Management System
-</h3>
+            </p>
 
+        </div>
 
-<p>
 
-A PHP and MySQL based flower shop system
-with customer login, cart, orders, wishlist,
-reviews, and admin management.
 
-</p>
+        <!-- WHY CHOOSE US -->
 
+        <div class="info-card">
 
+            <h3>
+                ⭐ Why Choose Us?
+            </h3>
 
-<a 
-href="https://github.com/Markneil30/FlowerShopSystem"
-target="_blank"
-class="btn-project">
 
-View GitHub
+            <p>
 
-</a>
+                ✔ Fresh Ingredients<br>
 
+                ✔ Affordable Prices<br>
 
+                ✔ Friendly Staff<br>
 
-</div>
+                ✔ Fast Service
 
+            </p>
 
+        </div>
 
 
 
+        <!-- OUR CHEF -->
 
+        <div class="info-card">
 
+            <h3>
+                👨‍🍳 Our Chef
+            </h3>
 
 
-<!-- MONTHSARY WEBSITE -->
+            <p>
 
-<div class="card">
+                Our experienced chefs prepare every meal
+                with passion, ensuring quality, freshness,
+                and unforgettable flavor.
 
+            </p>
 
-<img 
-src="monthsary.jpg" 
-class="project-img"
-alt="Monthsary Website">
+        </div>
 
 
-
-<h3>
-💜 Monthsary Website
-</h3>
-
-
-<p>
-
-A personal website created using HTML, CSS,
-PHP and MySQL with custom design and photo gallery.
-
-</p>
-
-
-
-<a 
-href="https://monthsarry.freepage.cc/index.php"
-target="_blank"
-class="btn-project">
-
-Live Demo
-
-</a>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<!-- CAMPUS ANNOUNCEMENT SYSTEM -->
-
-<div class="card">
-
-
-<img 
-src="campus-announcement.png" 
-class="project-img"
-alt="Campus Announcement System">
-
-
-
-<h3>
-📢 Campus Announcement System
-</h3>
-
-
-
-<p>
-
-A PHP and MySQL based web application that allows
-administrators to create announcements, manage recipients,
-filter audiences, and send email notifications using PHPMailer.
-
-</p>
-
-
-
-
-<a 
-href="https://campus-announcement.infinityfree.me/"
-target="_blank"
-class="btn-project">
-
-Live Demo
-
-</a>
-
-
-
-
-<a 
-href="https://github.com/Markneil30/Campus-Announcement-System"
-target="_blank"
-class="btn-project">
-
-View GitHub
-
-</a>
-
-
-
-</div>
-
-
-
-
-
-
-
-</div>
-
+    </div>
 
 </section>
 
 
 
+<!-- ================= MENU ================= -->
+
+<section id="menu">
+
+    <h2>
+        Our Signature Menu
+    </h2>
+
+
+    <p>
+        Discover our best-selling dishes loved by our customers.
+    </p>
+
+
+    <div class="menu-container">
+
+
+        <!-- BURGER -->
+
+        <div class="card">
+
+            <img
+                src="burger.jpg"
+                alt="Classic Burger">
+
+
+            <h3>
+                Classic Burger
+            </h3>
+
+
+            <p>
+                Juicy beef patty with fresh vegetables.
+            </p>
+
+
+            <h4>
+                ₱199
+            </h4>
+
+
+            <button
+                onclick="location.href='#reservation'">
+
+                Order Now
+
+            </button>
+
+        </div>
 
 
 
+        <!-- PIZZA -->
+
+        <div class="card">
+
+            <img
+                src="pizza.jpg"
+                alt="Pepperoni Pizza">
+
+
+            <h3>
+                Pepperoni Pizza
+            </h3>
+
+
+            <p>
+                Loaded with premium pepperoni and mozzarella.
+            </p>
+
+
+            <h4>
+                ₱349
+            </h4>
+
+
+            <button
+                onclick="location.href='#reservation'">
+
+                Order Now
+
+            </button>
+
+        </div>
 
 
 
-<section id="contact">
+        <!-- PASTA -->
+
+        <div class="card">
+
+            <img
+                src="pasta.jpg"
+                alt="Carbonara Pasta">
 
 
-<h2>Contact</h2>
+            <h3>
+                Carbonara Pasta
+            </h3>
 
 
-
-<p>
-
-GitHub:
-
-<a href="https://github.com/Markneil30" target="_blank">
-
-github.com/Markneil30
-
-</a>
-
-</p>
+            <p>
+                Creamy pasta topped with crispy bacon.
+            </p>
 
 
-
-<p>
-
-Email:
-
-markneilarayata27@gmail.com
-
-</p>
+            <h4>
+                ₱249
+            </h4>
 
 
+            <button
+                onclick="location.href='#reservation'">
+
+                Order Now
+
+            </button>
+
+        </div>
+
+
+    </div>
 
 </section>
 
 
 
+<!-- ================= RESERVATION ================= -->
+
+<section id="reservation" class="reservation">
+
+    <h2>
+        Reserve Your Table
+    </h2>
+
+    <p>
+        Make your reservation today and enjoy an unforgettable
+        dining experience with your loved ones.
+    </p>
+
+    <form
+        action="https://formsubmit.co/markneilarayata27@gmail.com"
+        method="POST">
+
+        <!-- EMAIL SETTINGS -->
+
+        <input
+            type="hidden"
+            name="_subject"
+            value="🍴 New Table Reservation - Delicious Bites">
+
+        <input
+            type="hidden"
+            name="_captcha"
+            value="false">
+
+        <input
+            type="hidden"
+            name="_template"
+            value="table">
+
+
+        <!-- CUSTOMER NAME -->
+
+        <input
+            type="text"
+            name="Full Name"
+            placeholder="Full Name"
+            required>
+
+
+        <!-- CUSTOMER EMAIL -->
+
+        <input
+            type="email"
+            name="Customer Email"
+            placeholder="Email Address"
+            required>
+
+
+        <!-- PHONE NUMBER -->
+
+        <input
+            type="tel"
+            name="Phone Number"
+            placeholder="Phone Number"
+            required>
+
+
+        <!-- RESERVATION DATE -->
+
+        <input
+            type="date"
+            name="Reservation Date"
+            required>
+
+
+        <!-- RESERVATION TIME -->
+
+        <input
+            type="time"
+            name="Reservation Time"
+            required>
+
+
+        <!-- NUMBER OF GUESTS -->
+
+        <input
+            type="number"
+            name="Number of Guests"
+            placeholder="Number of Guests"
+            min="1"
+            max="50"
+            required>
+
+
+        <!-- SPECIAL REQUESTS -->
+
+        <textarea
+            name="Special Requests"
+            rows="5"
+            placeholder="Special Requests"></textarea>
+
+
+        <!-- RESERVE BUTTON -->
+
+        <button type="submit">
+            📅 Reserve Now
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section
+    class="contact"
+    id="contact">
+
+
+    <h2>
+        Contact Us
+    </h2>
+
+
+    <p class="subtitle">
+
+        We'd love to hear from you.
+
+    </p>
+
+
+    <div class="contact-container">
+
+
+        <!-- CONTACT INFORMATION -->
+
+        <div class="contact-info">
+
+
+            <h3>
+                Get in Touch
+            </h3>
 
 
 
+            <!-- ADDRESS -->
+
+            <div class="contact-item">
+
+                <h4>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Address
+
+                </h4>
 
 
+                <p>
+
+                    <a
+                        href="https://www.google.com/maps?q=Malolos,Bulacan"
+                        target="_blank">
+
+                        123 Main Street,<br>
+
+                        Malolos City, Bulacan, Philippines
+
+                    </a>
+
+                </p>
+
+            </div>
+
+
+
+            <!-- PHONE -->
+
+            <div class="contact-item">
+
+                <h4>
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    Contact Number
+
+                </h4>
+
+
+                <p>
+
+                    <a href="tel:+639123456789">
+
+                        +63 912 345 6789
+
+                    </a>
+
+                </p>
+
+            </div>
+
+
+
+            <!-- EMAIL -->
+
+            <div class="contact-item">
+
+                <h4>
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    Email
+
+                </h4>
+
+
+                <p>
+
+                    <a href="mailto:info@deliciousbites.com">
+
+                        info@deliciousbites.com
+
+                    </a>
+
+                </p>
+
+            </div>
+
+
+
+            <!-- FACEBOOK -->
+
+            <div class="contact-item">
+
+                <h4>
+
+                    <i class="fa-brands fa-facebook"></i>
+
+                    Facebook
+
+                </h4>
+
+
+                <a
+                    href="https://facebook.com"
+                    target="_blank">
+
+                    facebook.com/DeliciousBites
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- GOOGLE MAP -->
+
+        <div class="map">
+
+            <iframe
+
+                src="https://www.google.com/maps?q=Malolos,Bulacan&output=embed"
+
+                loading="lazy"
+
+                allowfullscreen>
+
+            </iframe>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
 
-<p>
+    <h2>
+        🍴 Delicious Bites
+    </h2>
 
-© 2026 Mark Neil Arayata | Portfolio
 
-</p>
+    <p>
+
+        Bringing families together through great food
+        and unforgettable dining experiences.
+
+    </p>
+
+
+    <br>
+
+
+    <p>
+
+        © 2026 Delicious Bites Restaurant.
+        All Rights Reserved.
+
+    </p>
 
 
 </footer>
 
-
-
-
-
-
-
-<script src="script.js"></script>
 
 
 </body>
