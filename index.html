@@ -3,12 +3,461 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<title>Mark Neil Arayata | Portfolio</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+    <title>Mark Neil Arayata | Portfolio</title>
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            background: #f5f7fa;
+
+            color: #222;
+
+            line-height: 1.6;
+
+        }
+
+
+        /* ================= HEADER ================= */
+
+        header {
+
+            background: #111827;
+
+            color: white;
+
+            padding: 20px 8%;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 1000;
+
+        }
+
+
+        header h1 {
+
+            font-size: 25px;
+
+        }
+
+
+        nav {
+
+            display: flex;
+
+            gap: 25px;
+
+        }
+
+
+        nav a {
+
+            color: white;
+
+            text-decoration: none;
+
+            font-weight: 500;
+
+            transition: 0.3s;
+
+        }
+
+
+        nav a:hover {
+
+            color: #60a5fa;
+
+        }
+
+
+        /* ================= SECTIONS ================= */
+
+        section {
+
+            padding: 80px 8%;
+
+        }
+
+
+        /* ================= HERO ================= */
+
+        .hero {
+
+            min-height: 80vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #111827,
+                    #2563eb
+                );
+
+            color: white;
+
+        }
+
+
+        .hero-content {
+
+            max-width: 800px;
+
+        }
+
+
+        .hero h2 {
+
+            font-size: 50px;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .hero p {
+
+            font-size: 19px;
+
+            color: #e5e7eb;
+
+        }
+
+
+        /* ================= ABOUT ================= */
+
+        #about {
+
+            background: white;
+
+            text-align: center;
+
+        }
+
+
+        #about h2,
+        #projects h2,
+        #contact h2 {
+
+            font-size: 36px;
+
+            margin-bottom: 20px;
+
+            color: #111827;
+
+        }
+
+
+        .about-text {
+
+            max-width: 850px;
+
+            margin: auto;
+
+            font-size: 18px;
+
+            color: #555;
+
+        }
+
+
+        /* ================= PROJECTS ================= */
+
+        #projects {
+
+            background: #f5f7fa;
+
+        }
+
+
+        .projects-container {
+
+            max-width: 1200px;
+
+            margin: 40px auto 0;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(280px, 1fr)
+                );
+
+            gap: 30px;
+
+        }
+
+
+        .project-card {
+
+            background: white;
+
+            border-radius: 15px;
+
+            padding: 30px;
+
+            box-shadow:
+                0 10px 30px
+                rgba(0, 0, 0, 0.08);
+
+            transition: 0.3s;
+
+        }
+
+
+        .project-card:hover {
+
+            transform: translateY(-8px);
+
+            box-shadow:
+                0 15px 35px
+                rgba(0, 0, 0, 0.15);
+
+        }
+
+
+        .project-card h3 {
+
+            font-size: 24px;
+
+            color: #1d4ed8;
+
+            margin-bottom: 15px;
+
+        }
+
+
+        .project-card p {
+
+            color: #555;
+
+            margin-bottom: 20px;
+
+        }
+
+
+        /* ================= BUTTONS ================= */
+
+        .project-buttons {
+
+            display: flex;
+
+            gap: 10px;
+
+            flex-wrap: wrap;
+
+        }
+
+
+        .btn {
+
+            display: inline-block;
+
+            padding: 10px 18px;
+
+            background: #2563eb;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 8px;
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            transition: 0.3s;
+
+        }
+
+
+        .btn:hover {
+
+            background: #1d4ed8;
+
+            transform: translateY(-2px);
+
+        }
+
+
+        .btn.secondary {
+
+            background: #111827;
+
+        }
+
+
+        .btn.secondary:hover {
+
+            background: #374151;
+
+        }
+
+
+        /* ================= CONTACT ================= */
+
+        #contact {
+
+            background: white;
+
+            text-align: center;
+
+        }
+
+
+        .contact-info {
+
+            max-width: 600px;
+
+            margin: auto;
+
+            font-size: 18px;
+
+        }
+
+
+        .contact-info p {
+
+            margin: 15px 0;
+
+        }
+
+
+        .contact-info a {
+
+            color: #2563eb;
+
+            text-decoration: none;
+
+        }
+
+
+        .contact-info a:hover {
+
+            text-decoration: underline;
+
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+
+            background: #111827;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 25px 15px;
+
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 700px) {
+
+
+            header {
+
+                flex-direction: column;
+
+                gap: 12px;
+
+            }
+
+
+            nav {
+
+                gap: 15px;
+
+            }
+
+
+            nav a {
+
+                font-size: 14px;
+
+            }
+
+
+            .hero h2 {
+
+                font-size: 36px;
+
+            }
+
+
+            .hero p {
+
+                font-size: 16px;
+
+            }
+
+
+            section {
+
+                padding: 60px 20px;
+
+            }
+
+
+            #about h2,
+            #projects h2,
+            #contact h2 {
+
+                font-size: 30px;
+
+            }
+
+
+            .project-card {
+
+                padding: 25px;
+
+            }
+
+        }
+
+    </style>
 
 </head>
 
@@ -16,332 +465,320 @@
 <body>
 
 
-<nav>
+    <!-- ================= HEADER ================= -->
 
-<h2>Mark Neil Arayata</h2>
+    <header>
 
-<div>
+        <h1>
+            Mark Neil Arayata
+        </h1>
 
-<a href="#about">About</a>
 
-<a href="#projects">Projects</a>
+        <nav>
 
-<a href="#contact">Contact</a>
+            <a href="#about">
+                About
+            </a>
 
-</div>
 
-</nav>
+            <a href="#projects">
+                Projects
+            </a>
 
 
+            <a href="#contact">
+                Contact
+            </a>
 
+        </nav>
 
+    </header>
 
-<header class="hero">
 
 
-<img 
-src="profile.png" 
-class="profile"
-alt="Mark Neil Arayata Profile">
+    <!-- ================= HERO ================= -->
 
+    <section class="hero">
 
-<h1>
-Hi, I'm Mark Neil Arayata 👋
-</h1>
+        <div class="hero-content">
 
+            <h2>
+                Welcome to My Portfolio
+            </h2>
 
-<h3>
-Web Developer | PHP & MySQL Developer
-</h3>
 
+            <p>
+                Web Developer | System Developer | College Student
+            </p>
 
-<p>
-I create websites, systems, and applications using modern web technologies.
-</p>
+        </div>
 
+    </section>
 
-<a href="#projects" class="btn">
-View My Projects
-</a>
 
 
-</header>
+    <!-- ================= ABOUT ================= -->
 
+    <section id="about">
 
+        <h2>
+            About
+        </h2>
 
 
+        <p class="about-text">
 
+            I am a college student passionate about web development,
+            system development, and creating useful applications.
+            I specialize in PHP, MySQL, HTML, CSS, JavaScript,
+            and Bootstrap.
 
+        </p>
 
-<section id="about">
+    </section>
 
 
-<h2>About Me</h2>
 
+    <!-- ================= PROJECTS ================= -->
 
-<p>
+    <section id="projects">
 
-I am a college student passionate about web development,
-system development, and creating useful applications.
+        <h2 style="text-align: center;">
 
-I specialize in PHP, MySQL, HTML, CSS, JavaScript, and Bootstrap.
+            Projects
 
-</p>
+        </h2>
 
 
-</section>
+        <div class="projects-container">
 
 
 
+            <!-- ================= FLOWER SHOP ================= -->
 
+            <div class="project-card">
 
+                <h3>
+                    🌸 Flower Shop System
+                </h3>
 
 
+                <p>
 
+                    A PHP and MySQL based flower shop system
+                    with customer login, cart, orders, wishlist,
+                    reviews, and admin management.
 
-<section id="projects">
+                </p>
 
 
-<h2>My Projects</h2>
+                <div class="project-buttons">
 
+                    <a
+                        href="https://github.com/Markneil30/FlowerShop"
+                        target="_blank"
+                        class="btn">
 
+                        View GitHub
 
-<div class="projects">
+                    </a>
 
+                </div>
 
+            </div>
 
 
 
+            <!-- ================= DELICIOUS BITES ================= -->
 
+            <div class="project-card">
 
-<!-- FLOWER SHOP SYSTEM -->
+                <h3>
+                    🍴 Delicious Bites Restaurant
+                </h3>
 
-<div class="card">
 
+                <p>
 
-<img 
-src="flower-shop.png" 
-class="project-img"
-alt="Flower Shop System">
+                    A responsive restaurant website created using
+                    HTML, CSS, JavaScript, and Bootstrap.
+                    It includes a menu, table reservation system,
+                    contact information, Google Maps, and email
+                    reservation functionality.
 
+                </p>
 
 
-<h3>
-🌸 Flower Shop Management System
-</h3>
+                <div class="project-buttons">
 
+                    <a
+                        href="/MyPortfolio/delicious-bites/"
+                        target="_blank"
+                        class="btn">
 
-<p>
+                        Live Demo
 
-A PHP and MySQL based flower shop system
-with customer login, cart, orders, wishlist,
-reviews, and admin management.
+                    </a>
 
-</p>
+                </div>
 
+            </div>
 
 
-<a 
-href="https://github.com/Markneil30/FlowerShopSystem"
-target="_blank"
-class="btn-project">
 
-View GitHub
+            <!-- ================= PERSONAL WEBSITE ================= -->
 
-</a>
+            <div class="project-card">
 
+                <h3>
+                    💻 Personal Website
+                </h3>
 
 
-</div>
+                <p>
 
+                    A personal website created using HTML, CSS,
+                    PHP and MySQL with custom design and
+                    photo gallery.
 
+                </p>
 
 
+                <div class="project-buttons">
 
+                    <a
+                        href="#"
+                        class="btn">
 
+                        Live Demo
 
+                    </a>
 
+                </div>
 
-<!-- MONTHSARY WEBSITE -->
+            </div>
 
-<div class="card">
 
 
-<img 
-src="monthsary.jpg" 
-class="project-img"
-alt="Monthsary Website">
+            <!-- ================= ANNOUNCEMENT SYSTEM ================= -->
 
+            <div class="project-card">
 
+                <h3>
+                    📢 Announcement System
+                </h3>
 
-<h3>
-💜 Monthsary Website
-</h3>
 
+                <p>
 
-<p>
+                    A PHP and MySQL based web application that allows
+                    administrators to create announcements, manage
+                    recipients, filter audiences, and send email
+                    notifications using PHPMailer.
 
-A personal website created using HTML, CSS,
-PHP and MySQL with custom design and photo gallery.
+                </p>
 
-</p>
 
+                <div class="project-buttons">
 
+                    <a
+                        href="#"
+                        class="btn">
 
-<a 
-href="https://monthsarry.freepage.cc/index.php"
-target="_blank"
-class="btn-project">
+                        Live Demo
 
-Live Demo
+                    </a>
 
-</a>
 
+                    <a
+                        href="#"
+                        class="btn secondary">
 
+                        View GitHub
 
-</div>
+                    </a>
 
+                </div>
 
+            </div>
 
 
 
+        </div>
 
+    </section>
 
 
 
-<!-- CAMPUS ANNOUNCEMENT SYSTEM -->
+    <!-- ================= CONTACT ================= -->
 
-<div class="card">
+    <section id="contact">
 
+        <h2>
+            Contact
+        </h2>
 
-<img 
-src="campus-announcement.png" 
-class="project-img"
-alt="Campus Announcement System">
 
+        <div class="contact-info">
 
 
-<h3>
-📢 Campus Announcement System
-</h3>
+            <p>
 
+                <strong>
+                    GitHub:
+                </strong>
 
+                <br>
 
-<p>
 
-A PHP and MySQL based web application that allows
-administrators to create announcements, manage recipients,
-filter audiences, and send email notifications using PHPMailer.
+                <a
+                    href="https://github.com/Markneil30"
+                    target="_blank">
 
-</p>
+                    github.com/Markneil30
 
+                </a>
 
+            </p>
 
 
-<a 
-href="https://campus-announcement.infinityfree.me/"
-target="_blank"
-class="btn-project">
 
-Live Demo
+            <p>
 
-</a>
+                <strong>
+                    Email:
+                </strong>
 
+                <br>
 
 
+                <a
+                    href="mailto:markneilarayata27@gmail.com">
 
-<a 
-href="https://github.com/Markneil30/Campus-Announcement-System"
-target="_blank"
-class="btn-project">
+                    markneilarayata27@gmail.com
 
-View GitHub
+                </a>
 
-</a>
+            </p>
 
 
+        </div>
 
-</div>
+    </section>
 
 
 
+    <!-- ================= FOOTER ================= -->
 
+    <footer>
 
+        <p>
 
+            © 2026 Mark Neil Arayata | Portfolio
 
-</div>
+        </p>
 
-
-</section>
-
-
-
-
-
-
-
-
-
-<section id="contact">
-
-
-<h2>Contact</h2>
-
-
-
-<p>
-
-GitHub:
-
-<a href="https://github.com/Markneil30" target="_blank">
-
-github.com/Markneil30
-
-</a>
-
-</p>
-
-
-
-<p>
-
-Email:
-
-markneilarayata27@gmail.com
-
-</p>
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<footer>
-
-
-<p>
-
-© 2026 Mark Neil Arayata | Portfolio
-
-</p>
-
-
-</footer>
-
-
-
-
-
-
-
-<script src="script.js"></script>
+    </footer>
 
 
 </body>
